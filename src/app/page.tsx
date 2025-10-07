@@ -46,6 +46,7 @@ export default function CandyLandingPage() {
                 <div className="flex flex-wrap gap-4 pt-4">
                   <Link href="/shop">
                     <Button
+                      id="hero-shop-btn"
                       size="lg"
                       className="bg-yellow-400 text-gray-900 hover:bg-yellow-300 text-lg px-8 py-6 rounded-full shadow-2xl font-bold border-2 border-yellow-500"
                     >
@@ -54,6 +55,7 @@ export default function CandyLandingPage() {
                   </Link>
                   <Link href="/collections">
                     <Button
+                      id="hero-collections-btn"
                       size="lg"
                       className="bg-purple-600 text-white hover:bg-purple-500 text-lg px-8 py-6 rounded-full shadow-2xl font-bold border-2 border-purple-700"
                     >
