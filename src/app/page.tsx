@@ -1,8 +1,10 @@
-import Script from 'next/script'
+import Link from "next/link"
+import Script from "next/script"
 
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { Sparkles, Heart, Star, Candy } from "lucide-react"
+
 
 export default function CandyLandingPage() {
   return (
@@ -42,20 +44,22 @@ export default function CandyLandingPage() {
                 </p>
 
                 <div className="flex flex-wrap gap-4 pt-4">
-                  <Button
-                    id="hero-shop-btn"
-                    size="lg"
-                    className="bg-yellow-400 text-gray-900 hover:bg-yellow-300 text-lg px-8 py-6 rounded-full shadow-2xl font-bold border-2 border-yellow-500"
-                  >
-                    Shop Now
-                  </Button>
-                  <Button
-                    id="hero-collections-btn"
-                    size="lg"
-                    className="bg-purple-600 text-white hover:bg-purple-500 text-lg px-8 py-6 rounded-full shadow-2xl font-bold border-2 border-purple-700"
-                  >
-                    View Collections
-                  </Button>
+                  <Link href="/shop">
+                    <Button
+                      size="lg"
+                      className="bg-yellow-400 text-gray-900 hover:bg-yellow-300 text-lg px-8 py-6 rounded-full shadow-2xl font-bold border-2 border-yellow-500"
+                    >
+                      Shop Now
+                    </Button>
+                  </Link>
+                  <Link href="/collections">
+                    <Button
+                      size="lg"
+                      className="bg-purple-600 text-white hover:bg-purple-500 text-lg px-8 py-6 rounded-full shadow-2xl font-bold border-2 border-purple-700"
+                    >
+                      View Collections
+                    </Button>
+                  </Link>
                 </div>
               </div>
 
@@ -189,12 +193,14 @@ export default function CandyLandingPage() {
                 Join thousands of happy customers who trust us for their candy cravings. Free shipping on orders over $50!
               </p>
               <div className="flex flex-wrap gap-4 justify-center pt-4">
-                <Button
-                  size="lg"
-                  className="bg-yellow-400 text-gray-900 hover:bg-yellow-300 text-lg px-8 py-6 rounded-full shadow-2xl font-bold border-2 border-yellow-500"
-                >
-                  Start Shopping
-                </Button>
+                <Link href="/shop">
+                  <Button
+                    size="lg"
+                    className="bg-yellow-400 text-gray-900 hover:bg-yellow-300 text-lg px-8 py-6 rounded-full shadow-2xl font-bold border-2 border-yellow-500"
+                  >
+                    Start Shopping
+                  </Button>
+                </Link>
                 <Button
                   size="lg"
                   className="bg-orange-500 text-white hover:bg-orange-400 text-lg px-8 py-6 rounded-full shadow-2xl font-bold border-2 border-orange-600"
