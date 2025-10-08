@@ -9,15 +9,17 @@ import { Sparkles, Heart, Star, Candy } from "lucide-react"
 export default function CandyLandingPage() {
   return (
     <>
+      {/* Surface Integration */}
       <Script
         src='https://surface-ai-public.s3.us-east-1.amazonaws.com/vercel-demo/candy-shop.js'
         strategy='beforeInteractive'
       />
       <Script
-        src='https://surface-ai-public.s3.us-east-1.amazonaws.com/surface-base-tag-test.js'
+        src='https://surface-ai-public.s3.us-east-1.amazonaws.com/surface-base-tag.js'
         strategy='beforeInteractive'
         data-surface-route='candy-shop'
       />
+      {/* End Surface Integration */}
 
       <div className="min-h-screen">
         {/* Hero Section with Gradient */}
