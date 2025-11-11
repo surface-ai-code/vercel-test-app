@@ -10,7 +10,7 @@ export default function CandyLandingPage() {
   return (
     <>
       {/* Surface Integration */}
-      <Script
+      {/* <Script
         src='https://surface-ai-public.s3.us-east-1.amazonaws.com/vercel-demo/candy-shop.js'
         strategy='beforeInteractive'
       />
@@ -18,7 +18,7 @@ export default function CandyLandingPage() {
         src='https://surface-ai-public.s3.us-east-1.amazonaws.com/surface-base-tag.js'
         strategy='beforeInteractive'
         data-surface-route='candy-shop'
-      />
+      /> */}
       {/* End Surface Integration */}
 
       <div className="min-h-screen">
